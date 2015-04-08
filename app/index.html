@@ -14,7 +14,7 @@
 <script id="sidebar" type="text/blocks-template">
 	<div class="left-sidebar">
 		<h2>Categories</h2>
-		<div data-query="each(categories)" class="panel-group category-products" id="accordian"><!--category-productsr-->
+		<div data-query="each(categories)" class="panel-group category-products" id="accordian">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
@@ -22,7 +22,7 @@
 					</h4>
 				</div>
 			</div>
-		</div><!--/category-products-->
+		</div>
 
 		<h2>Brands</h2>
 		<div data-query="each(brands)" class="panel-group category-products">
@@ -60,8 +60,8 @@
 <script id="error" type="text/blocks-template"><span data-query="visible(!$this.valid())" class="error-message">( {{$this.errorMessage}} )</span></script>
 
 <body>
-	<header id="header"><!--header-->
-		<div class="header-middle"><!--header-middle-->
+	<header id="header">
+		<div class="header-middle">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4">
@@ -97,8 +97,8 @@
 				</div>
 
 			</div>
-		</div><!--/header-middle-->
-	</header><!--/header-->
+		</div>
+	</header>
 
 	<div id="home" data-query="view(Home)">
 
@@ -120,7 +120,7 @@
 
 	</div>
 
-	<script src="js/blocks.js"></script>
-    <script src="js/main.js"></script>
+	<script src="bower_components/blocks/dist/blocks.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

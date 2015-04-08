@@ -1,8 +1,8 @@
 {
   "name": "jsblocks-shopping-example",
-  "description": "",
-  "version": "",
-  "homepage": "http://jsblocks.com",
+  "description": "Online shopping application example build with jsblocks",
+  "version": "0.8.0",
+  "homepage": "https://github.com/astoilkov/jsblocks-shopping-example",
   "licence": "MIT",
   "private": true,
   "dependencies": {

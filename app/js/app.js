@@ -279,7 +279,7 @@
 		}
 	});
 
-	blocks.extend(App, {
+	App.extend({
 		addToCart: function (e, product) {
 			var cartProducts = App.Cart.products;
 
@@ -294,13 +294,13 @@
 		},
 
 		searchItems: Products().extend('filter', function (value) {
-			return !!(App.search() && value.title().toLowerCase().indexOf(App.search()) != -1);
+			return !!(this.search() && value.title().toLowerCase().indexOf(this.search()) != -1);
 		}).read(),
 
 		search: blocks.observable(),
 
 		clearSearch: function () {
-			App.search('');
+			this.search('');
 		}
 	});
 })();

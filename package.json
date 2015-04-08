@@ -1,8 +1,8 @@
 {
-  "name": "jsblocks-seed",
-  "description": "Starting template for a jsblocks project",
-  "version": "0.0.1",
-  "repository": "https://github.com/astoilkov/jsblocks-seed",
+  "name": "jsblocks-shopping-example",
+  "description": "Online shopping application example build with jsblocks",
+  "version": "0.8.0",
+  "repository": "https://github.com/astoilkov/jsblocks-shopping-example",
   "licence": "MIT",
   "private": true,
   "scripts": {
