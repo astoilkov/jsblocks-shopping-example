@@ -1,0 +1,38 @@
+{
+  "news": [{
+    "title": "Girls pink t-shirt arrived in store",
+    "author": "Mac Doe",
+    "create": "Sat April 3 2015 09:03:49 GMT+0200 (EET)",
+    "image": "1"
+  }, {
+    "title": "Special offers for the next 3 days",
+    "author": "Antonio Stoilkov",
+    "create": "Sat April 14 2015 11:30:00 GMT+0200 (EET)",
+    "image": "5"
+  }, {
+    "title": "Total sale",
+    "author": "Manager Sells",
+    "create": "Sat March 23 2015 10:14:00 GMT+0200 (EET)",
+    "image": "6"
+  }, {
+    "title": "The new winter collection is here",
+    "author": "Designer",
+    "create": "Sat April 10 2015 08:00:00 GMT+0200 (EET)",
+    "image": "4"
+  }, {
+    "title": "Prepare for the holidays",
+    "author": "John Doe",
+    "create": "Sat April 4 2015 08:30:00 GMT+0200 (EET)",
+    "image": "7"
+  }, {
+    "title": "E-Shopper interesting facts you probably don't know",
+    "author": "",
+    "create": "Sat March 25 2015 11:15:00 GMT+0200 (EET)",
+    "image": "3"
+  }, {
+    "title": "E-Shopper opens doors",
+    "author": "Antonio Stoilkov",
+    "create": "Sat March 20 2015 08:00:00 GMT+0200 (EET)",
+    "image": "2"
+  }]
+}

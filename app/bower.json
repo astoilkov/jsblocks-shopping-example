@@ -1,0 +1,11 @@
+{
+  "name": "jsblocks-shopping-example",
+  "description": "",
+  "version": "",
+  "homepage": "http://jsblocks.com",
+  "licence": "MIT",
+  "private": true,
+  "dependencies": {
+    "blocks": ""
+  }
+}

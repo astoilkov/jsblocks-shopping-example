@@ -1,0 +1,74 @@
+<section>
+    <div class="container">
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">News</li>
+            </ol>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 blog-post-area">
+                <div class="pagination-area">
+                    <ul data-query="each(pages)" class="pagination">
+                        <li data-role="header" data-query="setClass('inactive', page() == 1)">
+                            <a href="#news/{{Math.max(page() - 1, 1)}}"><i class="fa fa-angle-double-left"></i></a>
+                        </li>
+                        <li>
+                            <a data-query="setClass('active', $parent.page() == $this)" href="#news/{{$this}}">
+                                {{$this}}
+                            </a>
+                        </li>
+                        <li data-role="footer" data-query="setClass('inactive', page() == pages().length)">
+                            <a href="#news/{{Math.min(page() + 1, pages().length)}}"><i class="fa fa-angle-double-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-query="each(news.view)" class="single-blog-post">
+                    <div>
+                        <h3>{{title}}</h3>
+                        <div class="post-meta">
+                            <ul>
+                                <li><i class="fa fa-user"></i> {{author}}</li>
+                                <li><i class="fa fa-clock-o"></i> {{time}}</li>
+                                <li><i class="fa fa-calendar"></i> {{date}}</li>
+                            </ul>
+                            <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </span>
+                        </div>
+                        <img src="images/blog/{{image}}.jpg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p data-query="setClass('show', visible)" class="read-more">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <span data-query="click(toggle)" class="btn btn-primary">{{visible() ? 'Read less' : 'Read more'}}</span>
+                    </div>
+                </div>
+                <div class="blog-post-area">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

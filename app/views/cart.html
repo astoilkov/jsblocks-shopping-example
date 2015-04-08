@@ -1,0 +1,86 @@
+<section id="cart_items">
+    <div class="container">
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Shopping Cart</li>
+            </ol>
+        </div>
+        <div class="table-responsive cart_info">
+            <table class="table table-condensed">
+                <colgroup>
+                    <col style="width: 15%">
+                    <col style="width: 45%">
+                    <col style="width: 10%">
+                    <col style="width: 15%">
+                    <col style="width: 10%">
+                    <col style="width: 5%">
+                </colgroup>
+                <thead>
+                <tr class="cart_menu">
+                    <td class="image">Item</td>
+                    <td class="description"></td>
+                    <td class="price">Price</td>
+                    <td class="quantity">Quantity</td>
+                    <td class="total">Total</td>
+                    <td></td>
+                </tr>
+                </thead>
+                <tbody class="empty-cart" data-query="visible(empty)">
+                    <tr>
+                        <td colspan="6">
+                            <h4>No items in the cart. Let's go <a href="#/">shopping</a>.</h4>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody data-query="each(products)">
+                    <tr>
+                        <td class="cart_product">
+                            <a href=""><img src="../images/cart/one.png" alt=""></a>
+                        </td>
+                        <td class="cart_description">
+                            <h4><a href="">{{title}}</a></h4>
+                        </td>
+                        <td class="cart_price">
+                            <p>${{price}}</p>
+                        </td>
+                        <td class="cart_quantity">
+                            <div class="cart_quantity_button">
+                                <span data-query="click(quantityPlus)"> + </span>
+                                <input data-query="val(quantity)" class="cart_quantity_input" type="text" name="quantity" autocomplete="off" size="2">
+                                <span data-query="click(quantityMinus)"> - </span>
+                            </div>
+                        </td>
+                        <td class="cart_total">
+                            <p class="cart_total_price">${{quantity() * price()}}</p>
+                        </td>
+                        <td class="cart_delete">
+                            <span data-query="click(destroy)"><i class="fa fa-times"></i></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section> <!--/#cart_items-->
+
+<section data-query="visible(!empty())" id="do_action">
+    <div class="container">
+        <div class="heading">
+            <h3>Check Out</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="total_area">
+                    <ul>
+                        <li>Cart Sub Total <span>${{subTotal}}</span></li>
+                        <li>Eco Tax <span>$7</span></li>
+                        <li>Shipping Cost <span>Free</span></li>
+                        <li>Total <span>${{subTotal() + 7}}</span></li>
+                    </ul>
+                    <span data-query="click(checkOut)" class="btn btn-default check_out">Check Out</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/#do_action-->

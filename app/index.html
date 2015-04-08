@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | E-Shopper</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+</head><!--/head-->
+
+<script id="sidebar" type="text/blocks-template">
+	<div class="left-sidebar">
+		<h2>Categories</h2>
+		<div data-query="each(categories)" class="panel-group category-products" id="accordian"><!--category-productsr-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-query="setClass('active', $this == $parent.category()).click($parent.selectCategory, $this)" href="#">{{$this}}</a>
+					</h4>
+				</div>
+			</div>
+		</div><!--/category-products-->
+
+		<h2>Brands</h2>
+		<div data-query="each(brands)" class="panel-group category-products">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-query="setClass('active', $this == $parent.brand()).click($parent.selectBrand, $this)" href="#">{{$this}}</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+
+		<h2>Price Range</h2>
+		<div class="panel-group category-products">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a>From $</a>
+						<input data-query="val(from)" class="range-input" />
+					</h4>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a>To $</a>
+						<input data-query="val(to)" class="range-input" />
+					</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script id="error" type="text/blocks-template"><span data-query="visible(!$this.valid())" class="error-message">( {{$this.errorMessage}} )</span></script>
+
+<body>
+	<header id="header"><!--header-->
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="#/"><img src="images/logo.png" alt="" /></a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li id="cart-link">
+									<a href="#cart">
+										<i class="fa fa-shopping-cart"></i>
+										Cart
+									</a>
+									<span data-query="visible(Cart.products().length)">{{Cart.products().length}}</span>
+								</li>
+								<li><a href="#news"><i class="fa fa-newspaper-o"></i> News</a></li>
+								<li><a href="#contact"><i class="fa fa-pencil-square-o"></i> Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="search_box pull-right">
+							<input data-query="val(search)" type="text" placeholder="Search"/>
+							<ul data-query="each(searchItems.view)" class="search-results">
+								<li data-query="click($parent.clearSearch).navigateTo($root.Product, { image: image() })" class="search-result">
+									<h4>{{title}} <span class="price">${{price}}</span></h4>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div><!--/header-middle-->
+	</header><!--/header-->
+
+	<div id="home" data-query="view(Home)">
+
+	</div>
+
+	<div data-query="view(Cart)">
+
+	</div>
+
+	<div id="news-view" data-query="view(News)">
+
+	</div>
+
+	<div data-query="view(Contact)">
+
+	</div>
+
+	<div data-query="view(Product)">
+
+	</div>
+
+	<script src="js/blocks.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

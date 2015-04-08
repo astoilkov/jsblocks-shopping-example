@@ -1,0 +1,48 @@
+<section>
+    <div class="container">
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li class="one active">Home</li>
+            </ol>
+        </div>
+        <div class="row">
+            <div data-query="template(sidebar, Sidebar)" class="col-sm-3">
+
+            </div>
+
+            <div class="col-sm-9 padding-right">
+                <div class="pagination-area">
+                    <ul data-query="each(pages)" class="pagination">
+                        <li data-role="header" data-query="setClass('inactive', page() == 1)">
+                            <a data-query="click(pageMinus)" href="#"><i class="fa fa-angle-double-left"></i></a>
+                        </li>
+                        <li>
+                            <a data-query="setClass('active', $parent.page() == $this).click($parent.setPage, $this)" href="#">
+                                {{$this}}
+                            </a>
+                        </li>
+                        <li data-role="footer" data-query="setClass('inactive', page() == pages().length)">
+                            <a data-query="click(pagePlus)" href="#"><i class="fa fa-angle-double-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-query="each(products.view)">
+                    <div class="col-sm-4">
+                        <div class="product-image-wrapper">
+                            <div class="single-products">
+                                <div class="productinfo text-center">
+                                    <a href="#product/{{image}}">
+                                        <img src="images/products/{{image}}-small.jpg">
+                                    </a>
+                                    <h2>${{price}}</h2>
+                                    <p>{{title}}</p>
+                                    <a data-query="click($root.addToCart, $this)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

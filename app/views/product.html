@@ -1,0 +1,41 @@
+<section>
+    <div class="container">
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Product</li>
+            </ol>
+        </div>
+        <div class="row">
+            <div data-query="template(sidebar, Sidebar)" class="col-sm-3">
+
+            </div>
+
+            <div data-query="with(product)" class="col-sm-9 padding-right">
+                <div class="product-information"><!--/product-information-->
+                    <h2>{{title}}</h2>
+                            <span>
+                                <span>US ${{price}}</span>
+                                <label>Quantity:</label>
+                                <input data-query="val(quantity)" type="text" />
+                                <button type="button" class="btn btn-fefault cart">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    Add to cart
+                                </button>
+                            </span>
+                    <p><b>Availability:</b> In Stock</p>
+                    <p><b>Condition:</b> New</p>
+                    <p><b>Brand:</b> {{brand}}</p>
+                </div><!--/product-information-->
+            </div>
+
+            <div data-query="with(product)" class="col-sm-9 padding-right">
+                <div class="product-details"><!--product-details-->
+                    <div class="view-product">
+                        <img src="images/products/{{image}}.jpg" alt="" />
+                    </div>
+                </div><!--/product-details-->
+            </div>
+        </div>
+    </div>
+</section>

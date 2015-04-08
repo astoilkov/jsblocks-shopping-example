@@ -1,0 +1,489 @@
+{
+  "products": [{
+    "type": "underwear",
+    "image": "1",
+    "title": "Pants with a ribbon - Gray/Blue",
+    "price": 14,
+    "brand": "Lima"
+  }, {
+    "type": "underwear",
+    "image": "2",
+    "title": "Pants with a ribbon - Gray/Cyclamen",
+    "price": 14,
+    "brand": "Lima"
+  }, {
+    "type": "underwear",
+    "image": "3",
+    "title": "Pants with a ribbon - Gray/Red",
+    "price": 14,
+    "brand": "Lima"
+  }, {
+    "type": "underwear",
+    "image": "4",
+    "title": "Pants with a ribbon - Purple",
+    "price": 14,
+    "brand": "Lima"
+  }, {
+    "type": "underwear",
+    "image": "5",
+    "title": "Pants with a ribbon - Aqua/Red",
+    "price": 14,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "6",
+    "title": "Official dress - Beige/Blue",
+    "price": 32,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "7",
+    "title": "Official dress - Blue",
+    "price": 32,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "8",
+    "title": "Short jacket with flowers",
+    "price": 28,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "9",
+    "title": "Trousers - Black",
+    "price": 18,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "10",
+    "title": "Shirt with a NY image",
+    "price": 16,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "11",
+    "title": "Official jacket - Gray",
+    "price": 20,
+    "brand": "Lima"
+  }, {
+    "type": "boys",
+    "image": "12",
+    "title": "Shirt with a ship",
+    "price": 18,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "13",
+    "title": "Dress with a ballerina - Black/Gold",
+    "price": 32,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "14",
+    "title": "Shirt with a heart of lace - White",
+    "price": 18,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "15",
+    "title": "Casual dress - White/Cyclamen",
+    "price": 26,
+    "brand": "Rach"
+  }, {
+    "type": "girls",
+    "image": "16",
+    "title": "Casual dress - Black/White",
+    "price": 26,
+    "brand": "Rach"
+  }, {
+    "type": "girls",
+    "image": "17",
+    "title": "Casual dress - White/Orange",
+    "price": 26,
+    "brand": "Rach"
+  }, {
+    "type": "girls",
+    "image": "18",
+    "title": "Long shirt with roses - Cyclamen",
+    "price": 18,
+    "brand": "Rach"
+  }, {
+    "type": "girls",
+    "image": "19",
+    "title": "Modern official dress",
+    "price": 32,
+    "brand": "Rach"
+  }, {
+    "type": "girls",
+    "image": "20",
+    "title": "Official dress - White/Blue",
+    "price": 32,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "21",
+    "title": "Official dress - Silver",
+    "price": 32,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "22",
+    "title": "Set for official occasion",
+    "price": 58,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "23",
+    "title": "Casual set",
+    "price": 50,
+    "brand": "Lima"
+  }, {
+    "type": "boys",
+    "image": "24",
+    "title": "Vest - Gray/Orange",
+    "price": 20,
+    "brand": "Lima"
+  }, {
+    "type": "boys",
+    "image": "25",
+    "title": "Pants - Gray/Orange",
+    "price": 22,
+    "brand": "Lima"
+  }, {
+    "type": "boys",
+    "image": "26",
+    "title": "Casual set - Gray/Orange",
+    "price": 55,
+    "brand": "Lima"
+  }, {
+    "type": "boys",
+    "image": "27",
+    "title": "Casual set - Gray/Green",
+    "price": 55,
+    "brand": "Lima"
+  }, {
+    "type": "babies",
+    "image": "28",
+    "title": "Set with a hat - White/Gray/Red",
+    "price": 40,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "29",
+    "title": "Official jacket and a dress - White/Cyclamen",
+    "price": 60,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "30",
+    "title": "Official jacket and a dress - Cyclamen/Black",
+    "price": 60,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "31",
+    "title": "Official jacket and a dress - Black/Gray",
+    "price": 60,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "32",
+    "title": "Vest  - Gray/Black",
+    "price": 26,
+    "brand": "Rach"
+  }, {
+    "type": "girls",
+    "image": "33",
+    "title": "Official jacket and a dress - White/Black",
+    "price": 60,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "34",
+    "title": "Official jacket and a dress - Black/Cyclamen",
+    "price": 60,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "35",
+    "title": "Winter dress with wedge",
+    "price": 30,
+    "brand": "Rach"
+  }, {
+    "type": "boys",
+    "image": "36",
+    "title": "Pants - Black/Aqua",
+    "price": 20,
+    "brand": "Lima"
+  }, {
+    "type": "babies",
+    "image": "37",
+    "title": "Set with ribbons - Pink",
+    "price": 18,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "38",
+    "title": "Long shirt with wedge - Black/Gray",
+    "price": 24,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "39",
+    "title": "Long shirt with wedge - Black/Silver",
+    "price": 24,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "40",
+    "title": "Long shirt with wedge - Cyclamen/Black",
+    "price": 24,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "41",
+    "title": "Long shirt with wedge - Gray/Black",
+    "price": 24,
+    "brand": "Lima"
+  }, {
+    "type": "babies",
+    "image": "42",
+    "title": "Set with a hat - White/Gray/Green",
+    "price": 40,
+    "brand": "Lima"
+  }, {
+    "type": "babies",
+    "image": "43",
+    "title": "Set with a hat - White/Light Gray/Red",
+    "price": 40,
+    "brand": "Lima"
+  }, {
+    "type": "babies",
+    "image": "44",
+    "title": "Set with a hat - White/Blue/Red",
+    "price": 40,
+    "brand": "Lima"
+  }, {
+    "type": "boys",
+    "image": "45",
+    "title": "Pants - Dark Blue",
+    "price": 20,
+    "brand": "Lima"
+  }, {
+    "type": "girls",
+    "image": "46",
+    "title": "Long shirt with roses - Gray",
+    "price": 18,
+    "brand": "Rach"
+  }, {
+    "type": "girls",
+    "image": "47",
+    "title": "T-shirt and a skirt - Pink/Black",
+    "price": 30,
+    "brand": "Rach"
+  }, {
+    "type": "girls",
+    "image": "48",
+    "title": "T-shirt and a skirt - Cyclamen/Black",
+    "price": 30,
+    "brand": "Rach"
+  }, {
+    "type": "girls",
+    "image": "49",
+    "title": "T-shirt and a skirt - White/Black",
+    "price": 30,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "50",
+    "title": "T-shirt and jeans",
+    "price": 30,
+    "brand": "Lima"
+  }, {
+    "type": "boys",
+    "image": "51",
+    "title": "Shirt with fight club - Green/Orange",
+    "price": 20,
+    "brand": "Lima"
+  }, {
+    "type": "boys",
+    "image": "52",
+    "title": "Shirt with fight club - White/Gray",
+    "price": 20,
+    "brand": "Lima"
+  }, {
+    "type": "boys",
+    "image": "53",
+    "title": "Shirt with fight club - Blue/Orange",
+    "price": 20,
+    "brand": "Lima"
+  }, {
+    "type": "boys",
+    "image": "54",
+    "title": "Shirt with fight club - White/Black",
+    "price": 20,
+    "brand": "Lima"
+  }, {
+    "type": "babies",
+    "image": "55",
+    "title": "Shirt with a ribbon - White/Blue",
+    "price": 12,
+    "brand": "Lima"
+  }, {
+    "type": "babies",
+    "image": "56",
+    "title": "Jacket",
+    "price": 26,
+    "brand": "Lima"
+  }, {
+    "type": "babies",
+    "image": "57",
+    "title": "Shirt with a ribbon - White/Pink",
+    "price": 12,
+    "brand": "Lima"
+  }, {
+    "type": "babies",
+    "image": "58",
+    "title": "Pants",
+    "price": 22,
+    "brand": "Lima"
+  }, {
+    "type": "boys",
+    "image": "59",
+    "title": "Track suite - Gray/Light blue",
+    "price": 24,
+    "brand": "Rach"
+  }, {
+    "type": "boys",
+    "image": "60",
+    "title": "Track suite - Gray/Blue",
+    "price": 24,
+    "brand": "Rach"
+  }, {
+    "type": "boys",
+    "image": "61",
+    "title": "Track suite - Red/Gray",
+    "price": 24,
+    "brand": "Rach"
+  }, {
+    "type": "boys",
+    "image": "62",
+    "title": "Track suite - Gray/Dark blue",
+    "price": 24,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "63",
+    "title": "Pajamas with a dinosaur - DarkPurple",
+    "price": 14,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "64",
+    "title": "Pajamas with a dinosaur - Blue",
+    "price": 14,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "65",
+    "title": "Pajamas with a dinosaur - Gray",
+    "price": 14,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "66",
+    "title": "Pajamas with an umbrella - Red",
+    "price": 14,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "67",
+    "title": "Pajamas with an umbrella - Gray",
+    "price": 14,
+    "brand": "Rach"
+  }, {
+    "type": "boys",
+    "image": "68",
+    "title": "Top with a zip- Gray",
+    "price": 25,
+    "brand": "Rach"
+  }, {
+    "type": "boys",
+    "image": "69",
+    "title": "Pants - Black",
+    "price": 20,
+    "brand": "Rach"
+  }, {
+    "type": "boys",
+    "image": "70",
+    "title": "Casual set - Black/Gray",
+    "price": 42,
+    "brand": "Rach"
+  }, {
+    "type": "girls",
+    "image": "71",
+    "title": "Casual set with a hoodie - Dark Purple/Cyclamen",
+    "price": 44,
+    "brand": "Rach"
+  }, {
+    "type": "boys",
+    "image": "72",
+    "title": "Casual set with a clown - Black/White",
+    "price": 30,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "73",
+    "title": "Bib - Gray/Blue",
+    "price": 6,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "74",
+    "title": "Bib - Red",
+    "price": 6,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "75",
+    "title": "Bib - Blue",
+    "price": 6,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "76",
+    "title": "Bib - Gray/Red",
+    "price": 6,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "77",
+    "title": "Summer set - Black/White",
+    "price": 16,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "78",
+    "title": "Summer set - Gray/Blue",
+    "price": 16,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "79",
+    "title": "Shirt - Blue",
+    "price": 10,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "80",
+    "title": "Shirt - Gray/Blue",
+    "price": 10,
+    "brand": "Rach"
+  }, {
+    "type": "babies",
+    "image": "81",
+    "title": "Shirt - White",
+    "price": 12,
+    "brand": "Rach"
+  }]
+}
