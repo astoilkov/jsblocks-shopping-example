@@ -2,7 +2,7 @@
     <div class="container">
         <div class="breadcrumbs">
             <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li class="active">News</li>
             </ol>
         </div>
@@ -11,15 +11,15 @@
                 <div class="pagination-area">
                     <ul data-query="each(pages)" class="pagination">
                         <li data-role="header" data-query="setClass('inactive', page() == 1)">
-                            <a href="#news/{{Math.max(page() - 1, 1)}}"><i class="fa fa-angle-double-left"></i></a>
+                            <a href="/news/{{Math.max(page() - 1, 1)}}"><i class="fa fa-angle-double-left"></i></a>
                         </li>
                         <li>
-                            <a data-query="setClass('active', $parent.page() == $this)" href="#news/{{$this}}">
+                            <a data-query="setClass('active', $parent.page() == $this)" href="/news/{{$this}}">
                                 {{$this}}
                             </a>
                         </li>
                         <li data-role="footer" data-query="setClass('inactive', page() == pages().length)">
-                            <a href="#news/{{Math.min(page() + 1, pages().length)}}"><i class="fa fa-angle-double-right"></i></a>
+                            <a href="/news/{{Math.min(page() + 1, pages().length)}}"><i class="fa fa-angle-double-right"></i></a>
                         </li>
                     </ul>
                 </div>

@@ -7,13 +7,13 @@
   "private": true,
   "scripts": {
     "postinstall": "cd app && bower install",
-    "start": "cd app && http-server -a localhost -p 8000 -c-1 -o",
+    "start": "opener http://localhost:8000 && blocks static",
     "node": "opener http://localhost:8000 && node app.js"
   },
   "devDependencies": {
     "blocks": "0.x.x",
+    "blocks-cli": "0.x.x",
     "bower": "^1.4.1",
-    "http-server": "^0.8.0",
     "opener": "^1.4.1"
   }
 }

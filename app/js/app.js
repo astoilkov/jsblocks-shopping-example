@@ -1,5 +1,7 @@
 (function () {
-	var App = blocks.Application();
+	var App = blocks.Application({
+		history: 'pushState'
+	});
 
 	var Sidebar = {
 		from: blocks.observable(10),
