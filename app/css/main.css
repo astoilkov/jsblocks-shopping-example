@@ -1632,9 +1632,8 @@ ul.pagination li.inactive a:hover {
   vertical-align: inherit;
 }
 
-
-#cart_items .cart_info .image {
-  padding-left: 30px;
+.cart_info td img {
+  width: 200px;
 }
 
 

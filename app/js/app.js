@@ -52,8 +52,7 @@
 	var Products = App.Collection(Product, {
 		options: {
 			read: {
-				async: false,
-				url: 'products.json'
+				url: '/products.json'
 			}
 		},
 
@@ -63,7 +62,7 @@
 	App.View('Home', {
 		options: {
 			route: blocks.route('/{{type}}/{{value}}').optional('type').optional('value'),
-			url: 'views/home.html'
+			url: '/views/home.html'
 		},
 
 		Sidebar: Sidebar,
@@ -129,7 +128,7 @@
 	App.View('Product', {
 		options: {
 			route: 'product/{{image}}',
-			url: 'views/product.html'
+			url: '/views/product.html'
 		},
 
 		Sidebar: Sidebar,
@@ -159,7 +158,7 @@
 	App.View('Cart', {
 		options: {
 			route: 'cart',
-			url: 'views/cart.html'
+			url: '/views/cart.html'
 		},
 
 		products: Products(),
@@ -196,7 +195,7 @@
 	var Articles = App.Collection(Article, {
 		options: {
 			read: {
-				url: 'articles.json'
+				url: '/articles.json'
 			}
 		}
 	});
@@ -204,7 +203,7 @@
 	App.View('News', {
 		options: {
 			route: blocks.route('news/{{page}}').optional('page', 1),
-			url: 'views/news.html'
+			url: '/views/news.html'
 		},
 
 		news: Articles().extend('sort', function (valueA, valueB) {
@@ -266,7 +265,7 @@
 	App.View('Contact', {
 		options: {
 			route: 'contact',
-			url: 'views/contact.html'
+			url: '/views/contact.html'
 		},
 
 		message: Message(),
