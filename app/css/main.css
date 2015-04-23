@@ -251,6 +251,10 @@ a#scrollUp i{
 	color:#fdb45e;
 }
 
+#header .last {
+  padding-right: 0;
+}
+
 .search_box {
   position: relative;
 }
@@ -265,7 +269,7 @@ a#scrollUp i{
   height: 35px;
   outline: medium none;
   padding-left: 10px;
-  width: 335px;
+  width: 100%;
   background-image: url(../images/home/searchicon.png);
   background-repeat: no-repeat;
   background-position: 305px;

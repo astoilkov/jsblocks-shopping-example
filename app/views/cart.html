@@ -36,10 +36,14 @@
                 <tbody data-query="each(products)">
                     <tr>
                         <td class="cart_product">
-                            <a href=""><img src="/images/products/{{image}}-small.jpg" alt=""></a>
+                            <a href="/product/{{image}}">
+                                <img src="/images/products/{{image}}-small.jpg" alt="">
+                            </a>
                         </td>
                         <td class="cart_description">
-                            <h4><a href="">{{title}}</a></h4>
+                            <h4>
+                                <a href="/product/{{image}}">{{title}}</a>
+                            </h4>
                         </td>
                         <td class="cart_price">
                             <p>${{price}}</p>
