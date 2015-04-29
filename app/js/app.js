@@ -8,9 +8,12 @@
 		to: blocks.observable(400),
 
 		category: blocks.observable('All'),
+
 		categories: ['All', 'Boys', 'Girls', 'Babies', 'Underwear'],
+
 		selectCategory: function (e, category) {
 			Sidebar.category(category);
+			e.preventDefault();
 		},
 
 		brand: blocks.observable('All'),
