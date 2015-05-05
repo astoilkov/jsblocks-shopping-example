@@ -298,7 +298,7 @@
 		},
 
 		searchItems: Products().extend('filter', function (value) {
-			return !!(this.search() && value.title().toLowerCase().indexOf(this.search()) != -1);
+			return !!(this.search() && value.title().toLowerCase().indexOf(this.search().toLowerCase()) != -1);
 		}).read(),
 
 		search: blocks.observable(),
