@@ -1,5 +1,6 @@
 # Folders
 .idea
+.settings
 /node_modules
 /app/bower_components
 
