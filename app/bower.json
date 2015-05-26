@@ -6,6 +6,6 @@
   "licence": "MIT",
   "private": true,
   "dependencies": {
-    "blocks": ""
+    "blocks": "*"
   }
 }
