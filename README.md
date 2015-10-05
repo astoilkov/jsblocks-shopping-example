@@ -4,7 +4,7 @@ Online shopping application example build with jsblocks
 
 ## Run the project
 
- * Clone the repository or directly download it from [here](https://github.com/astoilkov/jsblocks-seed/archive/master.zip)
+ * Clone the repository or directly download it from [here](https://github.com/astoilkov/jsblocks-shopping-example/archive/master.zip)
 
 ```
 git clone https://github.com/astoilkov/jsblocks-shopping-example.git
