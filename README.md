@@ -1,6 +1,6 @@
 # jsblocks-shopping-example
 
-Online shopping application example build with jsblocks
+Online shopping application example built with jsblocks
 
 ## Run the project
 
