@@ -32,6 +32,8 @@
 
 		image: App.Property(),
 
+		type: App.Property(),
+
 		quantity: App.Property({
 			value: 1,
 			change: function () {
@@ -183,6 +185,7 @@
 
 	var Article = App.Model({
 		visible: blocks.observable(),
+		create: App.Property(),
 
 		init: function () {
 			this.createDate = new Date(this.create());
