@@ -85,7 +85,10 @@
 			}
 			return include;
 		}).extend('step', function () {
-			var pages = blocks.range(1, this.products.view().length / this.take());
+			var pages = [];
+			for (var i = 1; i < this.products.view().length / this.take(); i++) {
+				pages.push(i);
+			}
 			this.pages(pages.length ? pages : [1]);
 		}).extend('skip', function () {
 			return (this.page() - 1) * this.take();
@@ -153,10 +156,14 @@
 
 		populate: function () {
 			var image = this.image;
-
-			this.product.reset(this.products.first(function (value) {
-				return value.image() == image;
-			}));
+			var product = null;
+			blocks.each(this.products(), function (prod) {
+				if (prod.image() == image) {
+					product = prod;
+					return false;
+				}
+			});
+			this.product.reset(product);
 		}
 	});
 
@@ -173,9 +180,11 @@
 		}),
 
 		subTotal: blocks.observable(function () {
-			return this.products.reduce(function (memo, value) {
-				return memo + (value.quantity() * value.price());
-			}, 0);
+			var subtotal = 0;
+			 blocks.each(this.products(), function (product) {
+			 	subtotal += (product.quantity() * product.price());
+			 });
+			 return subtotal;
 		}),
 
 		checkOut: function () {
@@ -228,7 +237,11 @@
 
 		init: function () {
 			this.news.read(function () {
-				this.pages(blocks.range(1, this.news.size() / this.pageSize + 1));
+				var pages = [];
+				for(var i = 1; i < this.news().length / this.pageSize + 1; i++) {
+					pages.push(i);
+				}
+				this.pages(pages);
 			});
 		},
 
@@ -278,9 +291,8 @@
 
 		send: function (e) {
 			if (this.message.validate()) {
-				debugger;
 				this.message.reset();
-				alert("Message sent successfully. Congratulations!")
+				alert("Message sent successfully. Congratulations!");
 			}
 			e.preventDefault();
 		}
@@ -289,13 +301,15 @@
 	App.extend({
 		addToCart: function (e, product) {
 			var cartProducts = App.Cart.products;
-
-			if (!cartProducts.some(function (value) {
-					if (value.image() == product.image()) {
-						value.quantityPlus();
-						return true;
-					}
-				})) {
+			var productExists = false;
+			blocks.each(cartProducts(), function (cartProduct) {
+				if (cartProduct.image() == product.image()) {
+					productExists = true;
+					cartProduct.quantityPlus();
+					return false;
+				}
+			});
+			if (!productExists) {
 				cartProducts.add(product);
 			}
 		},
